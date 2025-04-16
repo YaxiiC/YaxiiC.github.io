@@ -1,0 +1,51 @@
+<!-- style.css -->
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: pink;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #333;
+}
+
+nav a {
+  margin: 0 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 2em 0;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #eee;
+  font-size: 0.9em;
+}
+
+/* blog.html and about.html will be added next with markdown content */
