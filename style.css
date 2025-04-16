@@ -35,28 +35,24 @@ nav a {
   color: #ff69b4;
 }
 
-.intro p {
-  margin-bottom: 1rem;
+.intro p, .intro ul, .intro h2, .intro li {
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.sections {
+.intro h2 {
+  font-size: 1.3rem;
+  color: #ff69b4;
   margin-top: 2rem;
 }
 
-.section {
-  margin-bottom: 2rem;
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
 }
 
-.section h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-  color: #ff69b4;
-}
-
-.section a {
-  color: #ff69b4;
-  text-decoration: underline;
+li {
+  margin-bottom: 0.8rem;
 }
 
 footer {
@@ -70,4 +66,9 @@ footer {
 .prompt {
   color: #ff69b4;
   margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }

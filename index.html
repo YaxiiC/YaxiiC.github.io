@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yaxi Chen</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleSection(id, link) {
+      const section = document.getElementById(id);
+      const isHidden = section.classList.toggle('hidden');
+      link.innerText = isHidden ? 'Show more →' : 'Show less ←';
+    }
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -22,26 +29,54 @@
 
     <main>
       <section class="intro">
-        <p><span class="prompt">$</span> Hello! I am currently a Postgraduate Teaching Assistant in the Department of Mechanical Engineering at University College London.</p>
-        <p><span class="prompt">$</span> My research interests include mechanics, data science, and interdisciplinary innovation. I enjoy working at the intersection of engineering and education.</p>
-      </section>
+        <p><span class="prompt">$</span> Tel: +44 7536904364 | Email: yaxi.chen.20@ucl.ac.uk</p>
 
-      <section class="sections">
-        <div class="section">
-          <h2><span class="prompt">$</span> About</h2>
-          <p>Learn more about my academic background and current role at UCL.</p>
-          <a href="about.html">Read more →</a>
+        <h2><span class="prompt">$</span> EDUCATION</h2>
+        <ul>
+          <li>PhD, Mechanical Engineering, University College London (03/2023–Present)<br>• AI in Medical Imaging, Materials Informatics</li>
+          <li>MSc, Biomaterials and Tissue Engineering, University College London (09/2021–09/2022)<br>• Distinction. Relevant modules: Biomaterials (88%), Bioengineering (87%), Biomechanics (80%)</li>
+          <li>BEng, Biomedical Engineering, Beihang University (09/2017–06/2021)<br>• Avg score: 87.5%. Key modules: Artificial Organs (98%), Medical Device Design (96%), Biomaterials (93%)</li>
+        </ul>
+
+        <h2><span class="prompt">$</span> RESEARCH EXPERIENCE</h2>
+        <ul>
+          <li><strong>Radiomic Feature Selection with Reconstructed Healthy Persona</strong> (12/2024–Present)</li>
+          <li><strong>Deep Learning MRI Analysis of Stem Cell Therapy</strong> (07/2023–Present)</li>
+        </ul>
+        <div id="more-research" class="hidden">
+          <ul>
+            <li><strong>ML-Guided Toothpaste Design with MOFs/Hydrogel</strong> (07/2023–Present)</li>
+            <li><strong>ML Tool for Bactericidal Efficiency of Nanosurfaces</strong> (03/2023–06/2023)</li>
+            <li><strong>3D Shape Modeling of TAVI Sites</strong> (12/2021–01/2023)</li>
+          </ul>
         </div>
-        <div class="section">
-          <h2><span class="prompt">$</span> Publications</h2>
-          <p>Explore my latest research and academic work.</p>
-          <a href="blog.html">View publications →</a>
+        <a href="#" onclick="toggleSection('more-research', this)">Show more →</a>
+
+        <h2><span class="prompt">$</span> INDUSTRIAL PLACEMENTS</h2>
+        <ul>
+          <li><strong>Philips</strong> (11/2022–02/2023)</li>
+          <li><strong>Simon-Kucher & Partners</strong> (03/2022–11/2022)</li>
+        </ul>
+        <div id="more-intern" class="hidden">
+          <ul>
+            <li><strong>Merck Group</strong> (03/2021–08/2021)</li>
+          </ul>
         </div>
-        <div class="section">
-          <h2><span class="prompt">$</span> Contact</h2>
-          <p>Feel free to reach out through my UCL profile.</p>
-          <a href="https://profiles.ucl.ac.uk/96487-yaxi-chen" target="_blank">Contact me →</a>
-        </div>
+        <a href="#" onclick="toggleSection('more-intern', this)">Show more →</a>
+
+        <h2><span class="prompt">$</span> CONFERENCES & PUBLICATIONS</h2>
+        <ul>
+          <li>Presentation: WBC 2024 - "Precision Bioink Printing via ML"</li>
+          <li>MICCAI 2024 (Submitted)</li>
+          <li>Journal of Nanobiotech (Accepted)</li>
+          <li>Patent: CN 202011322196.8</li>
+        </ul>
+
+        <h2><span class="prompt">$</span> SKILLS</h2>
+        <ul>
+          <li><strong>Languages:</strong> Python, C</li>
+          <li><strong>Software:</strong> MATLAB, SolidWorks, AutoCAD, Mimics, 3-Matic, ANSYS, Abaqus, Origin</li>
+        </ul>
       </section>
     </main>
 
